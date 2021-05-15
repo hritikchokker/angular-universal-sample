@@ -1,0 +1,12 @@
+<ng-container *ngIf="posts$|async as postList;else loadingTemplate">
+
+  <div fxLayout="row wrap" fxLayoutGap="15px" fxLayoutAlign="center center">
+    <app-post-card *ngFor="let post of postList" [post]="post"></app-post-card>
+  </div>
+</ng-container>
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    <mat-progress-spinner mode="indeterminate" color="primary" [strokeWidth]="10"></mat-progress-spinner>
+  </div>
+</ng-template>

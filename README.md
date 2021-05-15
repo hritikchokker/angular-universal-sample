@@ -1,5 +1,11 @@
 # AngularUniversalExample
 
+# Hosted On Netlify
+
+Run `npm run prerender`
+
+# [link](https://ng-ssr-hritikchokker.netlify.app/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
 ## SSR Development server
